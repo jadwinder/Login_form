@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("/images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+}
+
+.container h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.user-input input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+}
+
+.spans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.forgot span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container button {
+    width: 100%;
+    height: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register p {
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+.register a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-input input {
+        height: 35px;
+    }
+
+    .container button {
+        height: 35px;
+    }
+
+    .spans {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .forgot span {
+        margin-top: 5px;
+    }
+}
